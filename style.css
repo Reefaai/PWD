@@ -1,0 +1,45 @@
+* html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+    background-color: blue;
+}
+
+h2 {
+    text-align: justify;
+}
+
+.p1 {
+    text-align: right;
+}
+.p2 {
+    text-align: center;
+}
+
+.p3 {
+    text-align: justify;
+}
+
+ol {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+    padding: 10px;
+    color: darkblue;
+}
+
+img {
+    justify-content: center;
+    align-items: center;
+}

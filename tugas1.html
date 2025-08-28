@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Artikel</title>
+
+    <style>
+        :root {
+            --mantle: #181825;
+            --crust: #11111b;
+            --mauve: #cba6f7;
+            --sosmed-hover: rgba(255, 255, 255, 0.175);
+            --border-section: 15px;
+            --padding-section: 20px;
+            --border-in: 8px;
+            --margin-section: 30px;
+            --padding-list: 20px;
+            --fix-margin-list: 37px;
+            --margin-section: 30px;
+            --sosmed-padding: 10px 0;
+            --sosmed-margin: 0 5px;
+            --sosmed-radius: 20px
+        }
+
+        body {margin: 0; display: flex; flex-direction: column; background-color: #1e1e2e; color: #cdd6f4; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+        main {padding: 40px;}
+
+        .section1 {background-color: var(--mantle); border-radius: var(--border-section); padding: var(--padding-section);}
+        h1 {text-align: center; color: var(--mauve); padding-bottom: 10px;}
+        p {background-color: #11111b; padding: 20px; border-radius: var(--border-in);}
+
+        .listMateri {background-color: var(--mantle); padding: var(--padding-section); margin-top: var(--margin-section); border-radius: var(--border-section);}
+        ol {background-color: var(--crust); border-radius: var(--border-in); padding: var(--padding-list); padding-left: var(--fix-margin-list);}
+        
+        .dosen {background-color: var(--mantle); padding: var(--border-section); margin-top: var(--margin-section); border-radius: var(--border-section);}
+        ul {background-color: var(--crust); border-radius: var(--border-in); padding: var(--padding-list); padding-left: var(--fix-margin-list); margin: 0 5px 20px;}
+
+        li {padding: 1%;}
+
+        .dokumentasi {height: auto; width: 100%; border-radius: 7px; margin-top: var(--margin-section);}
+
+        figcaption {text-align: center; font-size: medium; font-style: italic;}
+
+        .footer {height: 15rem; display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 50px; background-color: var(--crust); padding: 20px;}
+        img {color: aqua; width: 36px; height: 36px; padding: 0px 10px; filter: grayscale(100%) brightness(80%);}
+
+        .fb {padding: var(--sosmed-padding); border-radius: var(--sosmed-radius); margin: var(--sosmed-margin);}
+        .fb:hover {background-color: var(--sosmed-hover);}
+
+        .trd {padding: var(--sosmed-padding); border-radius: var(--sosmed-radius); margin: var(--sosmed-margin);}
+        .trd:hover {background-color: var(--sosmed-hover); padding: 10px;}
+
+        .gm {padding: var(--sosmed-padding); border-radius: var(--sosmed-radius); margin: var(--sosmed-margin);}
+        .gm:hover {background-color: var(--sosmed-hover);}
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="section1">
+            <h1>Membuat Project UAS Mata Kuliah Algoritma dan Pemograman Lanjut </h1>
+            <p>Project UAS adalah sebuah kegiatan proyek atau tugas akhir yang dilakukan oleh siswa atau mahasiswa sebagai bentuk penilaian akhir dalam suatu mata kuliah. Tujuannya adalah untuk mengevaluasi sejauh mana pemahaman dan penerapan materi yang diajarkan selama perkuliahan melalui pembuatan produk atau karya nyata, bukan hanya melalui ujian tertulis.</p>
+            <p>Dalam proyek mata kuliah Algoritma dan Pemrograman Lanjut, setiap mahasiswa ditugaskan untuk membuat sebuah program pendataan atau pencatatan berbasis Graphical User Interface (GUI). Program ini dikembangkan menggunakan library Tkinter, dengan dukungan basis data yang dapat dipilih antara SQL maupun file Excel (CSV) sebagai media penyimpanan.</p>
+            <p>Bagi saya, tugas ini menjadi tantangan baru karena sebelumnya saya belum pernah membuat program serupa. Melalui proses pengerjaan proyek ini, saya banyak belajar mengenai bagaimana merancang dan menyusun struktur basis data, mulai dari menentukan kolom yang tepat hingga memilih tipe data yang sesuai. Selain itu, saya juga berlatih menyusun antarmuka pengguna (User Interface) agar program dapat lebih mudah digunakan oleh pengguna nantinya.</p>
+        </div>
+
+        <div class="listMateri">
+            <h1>Daftar Materi Praktik Paling Favorit</h1>
+            <ol type="1">
+                <li>Algoritma dan Pemograman</li>
+                <li>Pemograman SQL</li>
+                <li>Data Manajemen</li>
+            </ol>
+        </div>
+
+        <div class="dosen">
+            <h1>Daftar Dosen Matrikulasi</h1>
+            <ul>
+                <li>Khaerul Anam, M.Kom</li>
+                <li>Nana Suarna, M.Kom</li>
+                <li>Bani Nurhakim, M.Kom</li>
+            </ul>
+        </div>
+
+        <img src="images/diskusi.jpg" alt="Monyet sok sibuk" class="dokumentasi">
+        <figcaption>Kegiatan planning project</figcaption>
+    </main>
+
+    <div class="footer">
+        <a href="https://www.threads.com/@ahmd.reef" target="_blank" class="fb"><img src="images/facebook.png" alt="facebook-icon"></a>
+        <a href="https://www.threads.com/@ahmd.reef" target="_blank" class="trd"><img src="images/threads.png" alt="threads-icon"></a>
+        <a href="mailto:reefai.ahmd@gmail.com" target="_blank" class="gm"><img src="images/gmail.png" alt="email-icon"></a>
+    </div>
+</body>
+</html>
