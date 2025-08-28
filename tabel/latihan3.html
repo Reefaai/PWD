@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table latihan3 pwd</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 100%;
+        height: 100vh;
+        border-collapse: collapse;
+        font-weight: bold;
+      }
+
+      .logo {
+        height: 20%;
+        width: 20%;
+        background-color: grey;
+        font-size: 30px;
+      }
+
+      .header {
+        height: 20%;
+        background-color: rgb(232, 189, 158);
+        font-size: 40px;
+      }
+
+      .nav {
+        background-color: lightblue;
+        height: 5%;
+        width: 80%;
+      }
+
+      .search {
+        background-color: blueviolet;
+        height: 5%;
+        width: 20%;
+      }
+
+      .konten {
+        background-color: red;
+        height: 65%;
+        width: 75%;
+        font-size: 50px;
+      }
+
+      .kos {
+        width: 2%;
+      }
+
+      .side {
+        background-color: yellow;
+        font-size: 20px;
+      }
+
+      .footer {
+        background-color: green;
+        font-size: 20px;
+      }
+
+      table td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <table>
+        <tr>
+          <td class="logo" colspan="1">LOGO</td>
+          <td class="header" colspan="3">Header</td>
+        </tr>
+        <tr>
+          <td class="nav" colspan="3">Navigasi</td>
+          <td class="search">search</td>
+        </tr>
+        <tr>
+          <td class="konten" colspan="2">Konten</td>
+          <td class="kos"></td>
+          <td class="side">Sidebar</td>
+        </tr>
+        <tr>
+          <td class="footer" colspan="4">Footer</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
