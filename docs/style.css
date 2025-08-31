@@ -9,7 +9,7 @@
   --border-in: 8px;
   --margin-section: 30px;
   --padding-list: 20px;
-  --fix-margin-list: 37px;
+  --fix-margin-list: 20px;
   --sosmed-padding: 10px;
   --sosmed-radius: 20px;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 main {
-  padding: 0 3%;
+  padding: 0 4%;
 }
 
 h1 {
@@ -39,6 +39,7 @@ p {
   background-color: var(--crust);
   padding: var(--padding-section);
   border-radius: var(--border-in);
+  text-align: justify;
 }
 
 .card {
