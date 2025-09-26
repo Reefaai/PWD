@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Penne Pasta - Situs Dapurku</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .back-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+      }
+
+      .back-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(-5px);
+      }
+
+      .recipe-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.2em;
+        color: #ffd700;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin: 30px 0;
+      }
+
+      .section h2 {
+        color: #ffd700;
+        border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        padding-bottom: 10px;
+      }
+
+      .ingredients,
+      .instructions {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .tips {
+        background: rgba(255, 215, 0, 0.1);
+        border-left: 4px solid #ffd700;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .nav-link {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        text-align: center;
+        flex: 1;
+        min-width: 120px;
+      }
+
+      .nav-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn">← Kembali ke Beranda</a>
+
+      <div class="recipe-card">
+        <h1>🍝 Penne Pasta</h1>
+        <div class="subtitle">Penne Arrabbiata - Pasta Pedas ala Italia</div>
+
+        <div class="section">
+          <h2>📝 Deskripsi</h2>
+          <p>
+            Penne Arrabbiata adalah hidangan pasta Italia klasik yang berasal
+            dari Roma. "Arrabbiata" dalam bahasa Italia berarti "marah" yang
+            merujuk pada rasa pedas dari cabai merah yang digunakan dalam saus
+            tomat sederhana ini. Penne dengan bentuk tubular yang bergerigi
+            sempurna untuk menangkap saus tomat pedas yang kaya akan bawang
+            putih, cabai, dan rempah Italia. Hidangan ini mudah dibuat namun
+            memiliki cita rasa yang autentik dan memuaskan.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>🛒 Bahan-bahan</h2>
+          <div class="ingredients">
+            <h3>Untuk Pasta:</h3>
+            <ul>
+              <li>400 gram penne pasta</li>
+              <li>Air untuk merebus</li>
+              <li>2 sdm garam</li>
+              <li>1 sdm minyak zaitun</li>
+            </ul>
+
+            <h3>Untuk Saus Arrabbiata:</h3>
+            <ul>
+              <li>4 sdm minyak zaitun extra virgin</li>
+              <li>6 siung bawang putih, iris tipis</li>
+              <li>2-4 buah cabai merah kering, hancurkan</li>
+              <li>800 gram tomat kaleng, hancurkan</li>
+              <li>1 sdt garam</li>
+              <li>1/2 sdt merica hitam</li>
+              <li>1 sdt gula pasir</li>
+              <li>1/4 cangkir daun basil segar, sobek-sobek</li>
+              <li>1/4 cangkir daun peterseli, cincang</li>
+            </ul>
+
+            <h3>Pelengkap:</h3>
+            <ul>
+              <li>Keju Parmesan parut</li>
+              <li>Keju Pecorino Romano (opsional)</li>
+              <li>Daun basil segar</li>
+              <li>Minyak zaitun extra virgin</li>
+              <li>Chili flakes (opsional)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>👩‍🍳 Cara Membuat</h2>
+          <div class="instructions">
+            <ol>
+              <li>
+                Didihkan air dalam panci besar dengan garam. Masak penne sesuai
+                petunjuk kemasan hingga al dente.
+              </li>
+              <li>
+                Sementara pasta dimasak, panaskan minyak zaitun dalam wajan
+                besar dengan api sedang.
+              </li>
+              <li>
+                Masukkan bawang putih iris dan cabai kering. Tumis hingga bawang
+                putih keemasan dan harum (2-3 menit).
+              </li>
+              <li>
+                Tambahkan tomat hancur, garam, merica, dan gula. Aduk rata.
+              </li>
+              <li>
+                Masak saus dengan api sedang-tinggi selama 10-15 menit hingga
+                mengental dan berkurang cairannya.
+              </li>
+              <li>
+                Koreksi rasa - tambahkan garam, merica, atau cabai sesuai
+                selera.
+              </li>
+              <li>Tiriskan pasta, sisakan 1/2 cangkir air rebusan pasta.</li>
+              <li>
+                Masukkan pasta ke dalam saus, tambahkan air rebusan pasta jika
+                perlu untuk melumuri pasta.
+              </li>
+              <li>
+                Tambahkan daun basil dan peterseli, aduk cepat selama 1-2 menit.
+              </li>
+              <li>
+                Sajikan segera dengan taburan keju Parmesan dan daun basil
+                segar.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="tips">
+          <h3>💡 Tips:</h3>
+          <p>
+            Jangan terlalu lama menumis bawang putih agar tidak gosong dan
+            pahit. Sesuaikan tingkat kepedasan dengan jumlah cabai kering. Air
+            rebusan pasta mengandung pati yang membantu saus menempel pada
+            pasta. Sajikan segera selagi panas untuk hasil terbaik.
+          </p>
+        </div>
+
+        <div class="navigation">
+          <a href="../barat/pancake.html" class="nav-link">← 🥞 Pancake</a>
+          <a href="lasagna.html" class="nav-link">🧀 Lasagna →</a>
+          <a href="../spaghetti.html" class="nav-link">🍝 Spaghetti →</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

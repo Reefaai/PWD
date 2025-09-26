@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Pecel Jawa - Situs Dapurku</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .back-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+      }
+
+      .back-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(-5px);
+      }
+
+      .recipe-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.2em;
+        color: #ffd700;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin: 30px 0;
+      }
+
+      .section h2 {
+        color: #ffd700;
+        border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        padding-bottom: 10px;
+      }
+
+      .ingredients,
+      .instructions {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .tips {
+        background: rgba(255, 215, 0, 0.1);
+        border-left: 4px solid #ffd700;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .nav-link {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        text-align: center;
+        flex: 1;
+        min-width: 120px;
+      }
+
+      .nav-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn">← Kembali ke Beranda</a>
+
+      <div class="recipe-card">
+        <h1>🥗 Pecel Jawa</h1>
+        <div class="subtitle">Sayuran Segar dengan Sambal Pecel Khas Jawa</div>
+
+        <div class="section">
+          <h2>📝 Deskripsi</h2>
+          <p>
+            Pecel adalah salad tradisional Indonesia yang berasal dari Jawa
+            Timur. Terdiri dari berbagai sayuran rebus segar seperti kangkung,
+            tauge, kacang panjang, daun singkong, dan tahu/tempe yang disiram
+            dengan sambal pecel yang terbuat dari kacang tanah. Sambal pecel
+            memiliki rasa gurih, pedas, dan sedikit manis yang menjadi ciri khas
+            makanan ini. Biasanya disajikan dengan lontong, nasi, atau rempeyek
+            sebagai pelengkap.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>🛒 Bahan-bahan</h2>
+          <div class="ingredients">
+            <h3>Sayuran:</h3>
+            <ul>
+              <li>1 ikat kangkung, potong-potong</li>
+              <li>1 ikat bayam, ambil daunnya</li>
+              <li>150 gram tauge, buang akarnya</li>
+              <li>10 buah kacang panjang, potong 4 cm</li>
+              <li>1 genggam daun singkong muda</li>
+              <li>100 gram kacang polong</li>
+              <li>2 buah tahu, potong dadu</li>
+              <li>2 buah tempe, potong tipis</li>
+            </ul>
+
+            <h3>Sambal Pecel:</h3>
+            <ul>
+              <li>200 gram kacang tanah goreng</li>
+              <li>5 buah cabai merah keriting</li>
+              <li>8 buah cabai rawit (sesuai selera)</li>
+              <li>3 siung bawang putih</li>
+              <li>2 cm kencur</li>
+              <li>1 sdt terasi bakar</li>
+              <li>2 sdm gula jawa, sisir</li>
+              <li>1 sdt garam</li>
+              <li>1 lembar daun jeruk, buang tulangnya</li>
+              <li>Air asam jawa secukupnya</li>
+            </ul>
+
+            <h3>Pelengkap:</h3>
+            <ul>
+              <li>Lontong atau nasi putih</li>
+              <li>Rempeyek kacang</li>
+              <li>Kerupuk</li>
+              <li>Telur rebus</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>👩‍🍳 Cara Membuat</h2>
+          <div class="instructions">
+            <ol>
+              <li>
+                Rebus semua sayuran secara terpisah hingga matang tapi masih
+                renyah. Tiriskan dan dinginkan.
+              </li>
+              <li>Goreng tahu dan tempe hingga keemasan. Sisihkan.</li>
+              <li>
+                Untuk sambal pecel: goreng kacang tanah hingga matang dan
+                garing. Haluskan dengan ulekan.
+              </li>
+              <li>
+                Haluskan cabai merah, cabai rawit, bawang putih, kencur, dan
+                terasi.
+              </li>
+              <li>
+                Campurkan kacang tanah halus dengan bumbu halus. Tambahkan gula
+                jawa, garam, dan daun jeruk.
+              </li>
+              <li>
+                Tambahkan air asam jawa sedikit demi sedikit sambil diulek
+                hingga sambal pecel tercampur rata dan kekentalan yang
+                diinginkan.
+              </li>
+              <li>
+                Susun sayuran rebus, tahu, dan tempe di piring. Siram dengan
+                sambal pecel.
+              </li>
+              <li>Sajikan dengan lontong, rempeyek, dan pelengkap lainnya.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="tips">
+          <h3>💡 Tips:</h3>
+          <p>
+            Rebus sayuran jangan terlalu lama agar tetap renyah dan nutrisinya
+            terjaga. Sambal pecel bisa dibuat dalam jumlah banyak dan disimpan
+            di kulkas. Kacang tanah harus digoreng hingga benar-benar matang
+            agar sambal tidak mudah basi.
+          </p>
+        </div>
+
+        <div class="navigation">
+          <a href="rawon.html" class="nav-link">← 🍲 Rawon Jawa</a>
+          <a href="../barat/pancake.html" class="nav-link">🥞 Pancake →</a>
+          <a href="../spaghetti.html" class="nav-link">🍝 Spaghetti →</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

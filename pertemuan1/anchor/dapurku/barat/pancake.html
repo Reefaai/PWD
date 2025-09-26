@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Pancake - Situs Dapurku</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .back-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+      }
+
+      .back-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(-5px);
+      }
+
+      .recipe-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.2em;
+        color: #ffd700;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin: 30px 0;
+      }
+
+      .section h2 {
+        color: #ffd700;
+        border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        padding-bottom: 10px;
+      }
+
+      .ingredients,
+      .instructions {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .tips {
+        background: rgba(255, 215, 0, 0.1);
+        border-left: 4px solid #ffd700;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .nav-link {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        text-align: center;
+        flex: 1;
+        min-width: 120px;
+      }
+
+      .nav-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn">← Kembali ke Beranda</a>
+
+      <div class="recipe-card">
+        <h1>🥞 Pancake</h1>
+        <div class="subtitle">Pancake Fluffy ala Amerika</div>
+
+        <div class="section">
+          <h2>📝 Deskripsi</h2>
+          <p>
+            Pancake adalah kue dadar tipis yang populer sebagai menu sarapan di
+            Amerika dan Eropa. Pancake yang baik memiliki tekstur lembut,
+            fluffy, dan sedikit manis. Biasanya disajikan dengan sirup maple,
+            madu, atau topping buah-buahan segar. Pancake mudah dibuat dan cocok
+            untuk sarapan keluarga.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>🛒 Bahan-bahan</h2>
+          <div class="ingredients">
+            <h3>Bahan Kering:</h3>
+            <ul>
+              <li>200 gram tepung terigu protein sedang</li>
+              <li>2 sdm gula pasir</li>
+              <li>1 sdt baking powder</li>
+              <li>1/2 sdt garam</li>
+            </ul>
+
+            <h3>Bahan Basah:</h3>
+            <ul>
+              <li>250 ml susu cair</li>
+              <li>1 butir telur</li>
+              <li>2 sdm mentega, lelehkan</li>
+              <li>1 sdt vanilla extract (opsional)</li>
+            </ul>
+
+            <h3>Topping:</h3>
+            <ul>
+              <li>Sirup maple</li>
+              <li>Madu</li>
+              <li>Buah-buahan (pisang, strawberry, blueberry)</li>
+              <li>Mentega</li>
+              <li>Gula bubuk</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>👩‍🍳 Cara Membuat</h2>
+          <div class="instructions">
+            <ol>
+              <li>
+                Campurkan semua bahan kering (tepung, gula, baking powder,
+                garam) dalam mangkuk besar.
+              </li>
+              <li>
+                Dalam mangkuk terpisah, kocok telur, tambahkan susu, mentega
+                leleh, dan vanilla extract.
+              </li>
+              <li>
+                Tuang campuran basah ke dalam campuran kering. Aduk perlahan
+                hingga tercampur rata (jangan overmix).
+              </li>
+              <li>Biarkan adonan istirahat selama 5 menit.</li>
+              <li>
+                Panaskan wajan anti lengket dengan api sedang-kecil. Olesi
+                sedikit mentega.
+              </li>
+              <li>
+                Tuang 1/4 cangkir adonan untuk setiap pancake. Masak hingga
+                permukaan berbintik-bintik (2-3 menit).
+              </li>
+              <li>
+                Balik pancake, masak sisi lainnya hingga keemasan (1-2 menit).
+              </li>
+              <li>Sajikan pancake hangat dengan topping pilihan Anda.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="tips">
+          <h3>💡 Tips:</h3>
+          <p>
+            Jangan terlalu banyak mengaduk adonan agar pancake tetap fluffy.
+            Gunakan api sedang-kecil agar matang merata. Pancake siap dibalik
+            ketika muncul gelembung-gelembung kecil di permukaan.
+          </p>
+        </div>
+
+        <div class="navigation">
+          <a href="../jawa/rawon.html" class="nav-link">← 🍲 Rawon</a>
+          <a href="../pasta/penne.html" class="nav-link">🍝 Penne Pasta →</a>
+          <a href="../nasigor.html" class="nav-link">🍛 Nasi Goreng →</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
