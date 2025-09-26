@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Batagor Sunda - Situs Dapurku</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .back-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+      }
+
+      .back-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(-5px);
+      }
+
+      .recipe-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.2em;
+        color: #ffd700;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin: 30px 0;
+      }
+
+      .section h2 {
+        color: #ffd700;
+        border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        padding-bottom: 10px;
+      }
+
+      .ingredients,
+      .instructions {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .tips {
+        background: rgba(255, 215, 0, 0.1);
+        border-left: 4px solid #ffd700;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .nav-link {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        text-align: center;
+        flex: 1;
+        min-width: 120px;
+      }
+
+      .nav-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn">← Kembali ke Beranda</a>
+
+      <div class="recipe-card">
+        <h1>🥟 Batagor Sunda</h1>
+        <div class="subtitle">Bakso Tahu Goreng Khas Bandung</div>
+
+        <div class="section">
+          <h2>📝 Deskripsi</h2>
+          <p>
+            Batagor (Bakso Tahu Goreng) adalah makanan khas Sunda yang berasal
+            dari Bandung. Terdiri dari bakso ikan, tahu, dan siomay yang
+            digoreng hingga keemasan, kemudian disajikan dengan bumbu kacang
+            yang gurih dan saus sambal yang pedas. Batagor menjadi jajanan
+            favorit yang mudah ditemukan di pinggir jalan hingga restoran.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>🛒 Bahan-bahan</h2>
+          <div class="ingredients">
+            <h3>Untuk Batagor:</h3>
+            <ul>
+              <li>500 gram daging ikan tenggiri, haluskan</li>
+              <li>8 buah tahu putih, potong segitiga</li>
+              <li>2 sdm tepung tapioka</li>
+              <li>1 butir telur</li>
+              <li>2 siung bawang putih, haluskan</li>
+              <li>1 sdt garam</li>
+              <li>1/2 sdt merica bubuk</li>
+              <li>Minyak untuk menggoreng</li>
+            </ul>
+
+            <h3>Untuk Bumbu Kacang:</h3>
+            <ul>
+              <li>200 gram kacang tanah goreng</li>
+              <li>3 siung bawang putih</li>
+              <li>2 buah cabai merah</li>
+              <li>1 sdt garam</li>
+              <li>1 sdm gula jawa</li>
+              <li>Air matang secukupnya</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>👩‍🍳 Cara Membuat</h2>
+          <div class="instructions">
+            <ol>
+              <li>
+                Campurkan ikan tenggiri halus dengan tepung tapioka, telur,
+                bawang putih, garam, dan merica. Aduk rata hingga adonan kalis.
+              </li>
+              <li>
+                Isi tahu yang sudah dipotong dengan adonan ikan. Bentuk juga
+                adonan sisanya menjadi bakso bulat.
+              </li>
+              <li>
+                Rebus bakso dan tahu isi dalam air mendidih hingga mengapung
+                (sekitar 10 menit). Angkat dan tiriskan.
+              </li>
+              <li>
+                Panaskan minyak dalam wajan. Goreng bakso dan tahu hingga
+                keemasan dan garing. Angkat dan tiriskan.
+              </li>
+              <li>
+                Untuk bumbu kacang: haluskan kacang tanah, bawang putih, cabai,
+                garam, dan gula jawa. Tambahkan air sedikit demi sedikit hingga
+                kekentalan yang diinginkan.
+              </li>
+              <li>
+                Potong-potong batagor, siram dengan bumbu kacang, dan sajikan
+                dengan kerupuk serta sambal.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="tips">
+          <h3>💡 Tips:</h3>
+          <p>
+            Untuk hasil yang maksimal, gunakan ikan yang segar dan pastikan
+            adonan tidak terlalu lembek agar mudah dibentuk. Bumbu kacang bisa
+            dibuat lebih dulu dan disimpan di kulkas.
+          </p>
+        </div>
+
+        <div class="navigation">
+          <a href="../jawa/rawon.html" class="nav-link">🍲 Rawon Jawa →</a>
+          <a href="../nasigor.html" class="nav-link">🍛 Nasi Goreng →</a>
+          <a href="../tentang.html" class="nav-link">ℹ️ Tentang →</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
