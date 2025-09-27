@@ -20,31 +20,18 @@
     <p>Silakan masukkan nilai untuk 5 siswa di bawah ini.</p>
 
     <?php
-    // Bagian ini adalah untuk memproses data SETELAH form di-submit
-    // Mengecek apakah request yang masuk adalah POST (artinya, form telah dikirim)
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
-        // Mengambil data nilai dari form yang dikirim sebagai array
         $nilai_ujian = $_POST['nilai'];
         $jumlah_siswa = count($nilai_ujian);
         $total_nilai = 0;
 
-        // **Catatan tentang `do-while` untuk input:**
-        // Dalam aplikasi web, perulangan seperti `do-while` untuk meminta input berulang kali
-        // lebih cocok untuk aplikasi command-line (CLI). Untuk web, formulir HTML ini
-        // adalah cara untuk "meminta input". Logika `do-while` untuk input tidak diterapkan
-        // secara langsung di sini karena sifat request-response dari HTTP.
-
-        // Menggunakan looping FOR untuk menghitung total nilai (sesuai instruksi soal)
         for ($i = 0; $i < $jumlah_siswa; $i++) {
-            // Menambahkan setiap nilai ke variabel total_nilai
             $total_nilai += (int)$nilai_ujian[$i];
         }
 
-        // Menghitung rata-rata
         $rata_rata = $total_nilai / $jumlah_siswa;
 
-        // Menampilkan hasil perhitungan
         echo "<div class='result'>";
         echo "<h4>Hasil Perhitungan:</h4>";
         echo "Nilai yang diinput: " . implode(", ", $nilai_ujian) . "<br>";
