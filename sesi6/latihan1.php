@@ -1,5 +1,4 @@
 <?php
-// Mendefinisikan fungsi untuk menampilkan judul
 function judul() {
     echo "<h2>Nama-Nama Hari:</h2>";
 }
