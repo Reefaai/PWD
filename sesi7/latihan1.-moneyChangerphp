@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 1: Money Changer</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .container { max-width: 500px; margin: auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="number"], select { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+        .result { margin-top: 20px; padding: 15px; background-color: #e9f7ef; border-left: 5px solid #28a745; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Money Changer Sederhana</h2>
+
+    <?php
+    // Definisikan kurs mata uang dalam sebuah associative array
+    $kurs = [
+        "USD" => 12000, // Dollar Amerika
+        "SGD" => 7000,  // Dollar Singapur
+        "JPY" => 4000,  // Yen
+        "KRW" => 11     // Won
+    ];
+    
+    // Inisialisasi variabel hasil
+    $hasilKonversi = "";
+    $jumlahRupiah = 0;
+    $mataUang = '';
+
+    /**
+     * Fungsi untuk mengkonversi Rupiah ke mata uang asing.
+     * @param float $rupiah Jumlah uang dalam Rupiah.
+     * @param string $kodeMataUang Kode mata uang tujuan (misal: "USD").
+     * @param array $daftarKurs Array yang berisi nilai tukar.
+     * @return float Hasil konversi.
+     */
+    function konversi($rupiah, $kodeMataUang, $daftarKurs) {
+        // Ambil nilai kurs dari array
+        $nilaiTukar = $daftarKurs[$kodeMataUang];
+        
+        // Lakukan perhitungan dan kembalikan hasilnya
+        return $rupiah / $nilaiTukar;
+    }
+
+    // Cek jika form telah disubmit
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $jumlahRupiah = (float)$_POST['rupiah'];
+        $mataUang = $_POST['mata_uang'];
+
+        // Panggil fungsi konversi
+        $nilaiAsing = konversi($jumlahRupiah, $mataUang, $kurs);
+
+        // Siapkan teks untuk ditampilkan
+        $namaMataUangLengkap = [
+            "USD" => "Dollar Amerika",
+            "SGD" => "Dollar Singapur",
+            "JPY" => "Yen",
+            "KRW" => "Won"
+        ];
+        
+        $hasilKonversi = "<b>Rp " . number_format($jumlahRupiah) . "</b> sama dengan <b>" . number_format($nilaiAsing, 2) . " " . $namaMataUangLengkap[$mataUang] . "</b>.";
+    }
+    ?>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="rupiah">Jumlah Uang (Rupiah):</label>
+            <input type="number" id="rupiah" name="rupiah" value="<?php echo $jumlahRupiah > 0 ? $jumlahRupiah : '1000000'; ?>" required>
+        </div>
+        <div class="form-group">
+            <label for="mata_uang">Konversi ke:</label>
+            <select id="mata_uang" name="mata_uang" required>
+                <option value="USD" <?php if ($mataUang == 'USD') echo 'selected'; ?>>Dollar Amerika</option>
+                <option value="SGD" <?php if ($mataUang == 'SGD') echo 'selected'; ?>>Dollar Singapur</option>
+                <option value="JPY" <?php if ($mataUang == 'JPY') echo 'selected'; ?>>Yen</option>
+                <option value="KRW" <?php if ($mataUang == 'KRW') echo 'selected'; ?>>Won</option>
+            </select>
+        </div>
+        <button type="submit">Konversi</button>
+    </form>
+
+    <?php if (!empty($hasilKonversi)): ?>
+        <div class="result">
+            <?php echo $hasilKonversi; ?>
+        </div>
+    <?php endif; ?>
+
+</div>
+
+</body>
+</html>
